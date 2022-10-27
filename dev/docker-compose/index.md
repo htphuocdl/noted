@@ -24,3 +24,11 @@ networks:
   mydockernet:
     driver: bridge
 ```
+
+```shell
+docker-compose --env-file .my-env -f docker-compose.yml up -d 
+# --env-file  : file env
+# -f          : file docker-compose
+# up          : start docker
+# -d          : not follow logs
+```
