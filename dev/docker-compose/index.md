@@ -16,6 +16,8 @@ services:
       - 3001:3001               # port forward external:internal
     networks:
       - mydockernet             # access service via "mydockernet"
+    env_file:
+     - .my-env                   # choose env-file
     command: /bin/bash          # overwrite, do nut run ENTRYPOINT
     stdin_open: true
     tty: true
