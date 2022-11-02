@@ -32,3 +32,8 @@ docker-compose --env-file .my-env -f docker-compose.yml up -d
 # up          : start docker
 # -d          : not follow logs
 ```
+
+```shell
+# .env file
+host.docker.internal #call outer http
+```
